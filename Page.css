@@ -114,6 +114,38 @@ html{
     font-weight: 400;
     font-size: 18px;
 }
+.Form {
+    width: 100vw; /* Độ rộng của form */
+    height: 100vh; /* Độ cao của form */
+    position: fixed; /* Sử dụng vị trí cố định */
+    top: 50%; /* Đặt top ở giữa màn hình */
+    left: 50%; /* Đặt left ở giữa màn hình */
+    transform: translate(-50%, -50%); /* Dịch chuyển form điều chỉnh về trung tâm */
+    z-index: 10; /* Đảm bảo form hiển thị trên các phần tử khác */
+    display: none; /* Mặc định ẩn form */
+    justify-content: center; /* Căn chỉnh nội dung theo chiều ngang */
+    align-items: center; /* Căn chỉnh nội dung theo chiều dọc */
+}
+
+.Form_container{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 13px 0px #0000002E;
+    padding: 40px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.Form_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 .button1{
     width: max-content;
     padding: 10px 5px 10px 5px;
@@ -139,5 +171,10 @@ html{
 .button2:hover{
     background-color: black;
     color: white;
+}
+.input{
+    width:50%;
+    font-weight: 400;
+    font-size: 16px;
 }
 

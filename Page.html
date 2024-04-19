@@ -11,6 +11,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    <div class="Form" id="Form">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">ĐẶT PHÒNG</p>
+            </div>
+            <div class="Form_item">
+                <p>Họ và tên:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Email:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>SĐT:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+            <p>Loại phòng:</p>
+                <input list="roomTypes" id="roomType" name="roomType" class="input">
+                <datalist id="roomTypes">
+                    <option value="Thường">
+                    <option value="Vip1">
+                    <option value="Vip2">
+                </datalist>
+            </div>
+            <div class="Form_item" class="input">
+                <p>Số lượng:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Ngày nhận phòng:</p>
+                <input type="date" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Ngày trả phòng:</p>
+                <input type="date" class="input">
+            </div>
+            <div class="Form_item" style="justify-content: center;">
+                <button class="button1">ĐẶT PHÒNG</button>
+                <button class="button1" onclick="CloseForm()">Thoát</button>
+            </div>
+        </div>
+    </div>
    <div class="Taskbar">
         <div class="Taskbar_container">
             <img src="./Logo.png" alt="" width="100px">
@@ -26,7 +70,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="Taskbar_item">
-                        <button class="button1">ĐẶT NGAY</button>
+                        <button class="button1" onclick="MyForm()">ĐẶT NGAY</button>
                     </div>
                 </div>
                 <div id="item2">
@@ -53,6 +97,14 @@
                     <input type="radio" name="type">
                     VIP2
                 </div>
+                <div>
+                    <input type="radio" name="type1">
+                    Phòng đơn
+                </div>
+                <div>
+                    <input type="radio" name="type1">
+                    Phòng đôi
+                </div>
             </div>
             <div class="content_item2">
                 <div class="room">
@@ -75,7 +127,7 @@
                             </ul>
                         </p>
                         <p>Tiện ích: Máy lạnh, tivi, tủ lạnh,...</p>
-                        <button class="button1">ĐẶT NGAY</button>
+                        <button class="button1" onclick="MyForm()">ĐẶT NGAY</button>
                     </div>
                 </div>
                 <div class="room">
@@ -98,7 +150,7 @@
                             </ul>
                         </p>
                         <p>Tiện ích: Máy lạnh, tivi, tủ lạnh, spa, phòng Gym, hồ bơi...</p>
-                        <button class="button1">ĐẶT NGAY</button>
+                        <button class="button1" onclick="MyForm()">ĐẶT NGAY</button>
                     </div>
                 </div>
                 <div class="room">
@@ -121,11 +173,12 @@
                             </ul>
                         </p>
                         <p>Tiện ích: Máy lạnh, tivi, tủ lạnh, spa, phòng Gym, hồ bơi, buffet, dịch vụ đưa đón tận nơi...</p>
-                        <button class="button1">ĐẶT NGAY</button>
+                        <button class="button1" onclick="MyForm()">ĐẶT NGAY</button>
                     </div>
                 </div>
             </div>
         </div>
    </div>
+   <script src="./Page.js"></script>
 </body>
 </html>
