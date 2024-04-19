@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_item">
+            <div class="content">
+                <div class="content_img">
+                    <img src="./Logo_white.png" alt="" width="300px">
+                </div>
+                <div class="content_item">
+                    <div class="Title">
+                       <div class="Title_item" id="TTLogin" onclick="MyLogin()">
+                        Đăng nhập
+                        <div class="Line2" id="LineLogin"></div>
+                       </div>
+                       <div class="Line"></div>
+                       <div class="Title_item" id="TTSigup" onclick="MySigup()">
+                        Đăng ký
+                        <div class="Line2" id="LineSigup"></div>
+                       </div>
+                    </div>
+                    <div id="Login">
+                        <div class="Email">
+                            Email
+                        </div>
+                        <input type="text">
+                        <div class="Email">
+                            Password
+                        </div>
+                        <input type="text">
+                        <div class="Note">
+                            Sai tài khoản hoặc mật khẩu!
+                        </div>
+                        <div class="Tick">
+                            <input type="checkbox">
+                            Ghi nhớ mật khẩu
+                        </div>
+                        <div style="width: 100%;display: flex;justify-content: center;margin-top: 10px;">
+                            <button onclick="MyFunction()">
+                                ĐĂNG NHẬP
+                            </button>
+                        </div>
+                    </div>
+                    <div id="Sigup">
+                        <div class="Email">
+                            Họ tên
+                        </div>
+                        <input type="text">
+                        <div class="Email">
+                            Số điện thoại
+                        </div>
+                        <input type="text">
+                        <div class="Email">
+                            Email
+                        </div>
+                        <input type="text">
+                        <div class="Email">
+                            Mật khẩu
+                        </div>
+                        <input type="text">
+                        <div class="Email">
+                            Nhập lại mật khẩu
+                        </div>
+                        <input type="text">
+                        <div style="width: 100%;display: flex;justify-content: center;margin-top: 10px;">
+                            <button>
+                                ĐĂNG KÝ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Login.js"></script>
+</body>
+</html>
