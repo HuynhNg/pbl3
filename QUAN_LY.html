@@ -57,7 +57,7 @@
                         Quản lý dịch vụ
                     </div>
                     <div>
-                        <input type="radio" name="type">
+                        <input type="radio" name="type" onclick="billManagement()">
                         Quản lý hóa đơn
                     </div>
                 </div>
@@ -596,6 +596,36 @@
                                 <i class="fa-regular fa-pen-to-square"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="manager_container" id="Bill_management">
+                <div class="manager_item1">
+                    <div style="width: 100%;">
+                        Quản lý hóa đơn
+                        <div class="line"></div>
+                    </div>
+                    <div class="filter">
+                        Từ ngày
+                        <input type="date">
+                        đến ngày
+                        <input type="date">
+                        <button>Tìm kiếm</button>
+                    </div>
+                </div>
+                <div class="manager_item2">
+                    <table>
+                        <tr>
+                            <th>Mã HĐ</th>
+                            <th>Phòng</th>
+                            <th>Khách hàng</th>
+                            <th>Vào lúc</th>
+                            <th>Trả lúc</th>
+                            <th>Khoản khác</th>
+                            <th>Tổng cộng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái</th>
                         </tr>
                     </table>
                 </div>
