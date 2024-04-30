@@ -18,5 +18,11 @@ function MySigup()
 }
 function MyFunction()
 {
-    window.location.href="./Page.html";
+    let TK= document.getElementById("txtEmail").value;
+    let MK= document.getElementById("txtPassword").value;
+    if(TK == "correct_login@example.com" && MK == "C0rr3Ct_P@55w0rd") window.location.href="./Page.html";
+    else
+    {
+        document.getElementById('Note').style.opacity=1;
+    }
 }
