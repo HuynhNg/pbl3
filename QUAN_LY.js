@@ -71,3 +71,10 @@ function billManagement(){
         element.style.height = "80%";
     });
 }
+
+function MyForm(ID){
+    document.getElementById(ID).style.display= "Flex";
+}
+function CloseForm(ID){
+    document.getElementById(ID).style.display="none";
+}

@@ -11,6 +11,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    <div class="Form" id="RoomForm">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">ĐẶT PHÒNG</p>
+            </div>
+            <div class="Form_item">
+                <p>Họ và tên:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Email:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>SĐT:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+            <p>Loại phòng:</p>
+                <input list="roomTypes" id="roomType" name="roomType" class="input">
+                <datalist id="roomTypes">
+                    <option value="Thường">
+                    <option value="Vip1">
+                    <option value="Vip2">
+                </datalist>
+            </div>
+            <div class="Form_item" class="input">
+                <p>Số lượng:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Ngày nhận phòng:</p>
+                <input type="date" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Ngày trả phòng:</p>
+                <input type="date" class="input">
+            </div>
+            <div class="Form_item" style="justify-content: center;margin-top: 20px;">
+                <button class="button1">ĐẶT PHÒNG</button>
+                <button class="button1" onclick="CloseForm('RoomForm')">Thoát</button>
+            </div>
+        </div>
+    </div>
+    <div class="Form" id="ActorForm">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">THÊM KHÁCH HÀNG</p>
+            </div>
+            <div class="Form_item">
+                <p>Họ và tên:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Email:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>SĐT:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>Mật khẩu</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" style="justify-content: center;margin-top: 20px;">
+                <button class="button1">THÊM</button>
+                <button class="button1" onclick="CloseForm('ActorForm')">Thoát</button>
+            </div>
+        </div>
+    </div>
+    <div class="Form" id="ServiceForm">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">THÊM DỊCH VỤ</p>
+            </div>
+            <div class="Form_item">
+                <p>Tên dịch vụ:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Giá dịch vụ:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" style="justify-content: center;margin-top: 20px;">
+                <button class="button1">THÊM</button>
+                <button class="button1" onclick="CloseForm('ServiceForm')">Thoát</button>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="taskbar">
             <div style="display: flex;align-items: center;">
@@ -101,7 +191,7 @@
                     </div>
                     <div style="width:100%;display: flex;justify-content: center;gap: 20px;">
                         <button class="button1">Kiểm tra</button>
-                        <button class="button1">Đặt phòng</button>
+                        <button class="button1" onclick="MyForm('RoomForm')">Đặt phòng</button>
                     </div>
                 </div>
                 <div class="manager_item2">
@@ -367,7 +457,7 @@
                         Số điện thoại: 
                         <input type="text" placeholder="Số điện thoại cần tìm">
                         <button>Tìm kiếm</button>
-                        <button class="button2">Thêm khách hàng</button>
+                        <button class="button2" onclick="MyForm('ActorForm')">Thêm khách hàng</button>
                     </div>
                 </div>
                 <div class="manager_item2">
@@ -525,7 +615,7 @@
                         Dịch vụ:
                         <input type="text" placeholder="Thông tin dịch vụ">
                         <button>Tìm kiếm</button>
-                        <button class="button2">Thêm dịch vụ</button>
+                        <button class="button2" onclick="MyForm('ServiceForm')">Thêm dịch vụ</button>
                     </div>
                 </div>
                 <div class="manager_item2">
@@ -626,6 +716,117 @@
                             <th>Tổng cộng</th>
                             <th>Thanh toán</th>
                             <th>Trạng thái</th>
+                        </tr>
+                        <tr>
+                            <td>HD1</td>
+                            <td>102</td>
+                            <td>Nguyễn Văn Huy</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>700.000</td>
+                            <td>1400.000</td>
+                            <td>Đã Thanh Toán</td>
+
+                        </tr>
+                        <tr>
+                            <td>HD2</td>
+                            <td>103</td>
+                            <td>Nguyễn Văn Huy</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>700.000</td>
+                            <td>0</td>
+                            <td>Chuyển qua HD1</td>
+                        </tr>
+                        <tr>
+                            <td>HD3</td>
+                            <td>110</td>
+                            <td>Nguyễn Hưng</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD4</td>
+                            <td>112</td>
+                            <td>Lê Thị Hà</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD5</td>
+                            <td>110</td>
+                            <td>Nguyễn Hưng</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD6</td>
+                            <td>112</td>
+                            <td>Lê Thị Hà</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD7</td>
+                            <td>110</td>
+                            <td>Nguyễn Hưng</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD8</td>
+                            <td>112</td>
+                            <td>Lê Thị Hà</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD9</td>
+                            <td>110</td>
+                            <td>Nguyễn Hưng</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
+                        </tr>
+                        <tr>
+                            <td>HD10</td>
+                            <td>112</td>
+                            <td>Lê Thị Hà</td>
+                            <td>30/4/2024  07:37</td>
+                            <td>01/5/2024  08:10</td>
+                            <td></td>
+                            <td>1000.000</td>
+                            <td>1000.000</td>
+                            <td>Đã Thanh Toán</td>
                         </tr>
                     </table>
                 </div>
