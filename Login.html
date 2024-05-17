@@ -9,81 +9,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="container_item">
-            <div class="content">
-                <div class="content_img">
-                    <img src="./Logo_white.png" alt="" width="300px">
-                </div>
-                <div class="content_item">
-                    <div class="Title">
-                       <div class="Title_item" id="TTLogin" onclick="MyLogin()">
+            <div class="logo">
+                <img src="./Logo_white.png" alt="" width="100px">
+                HMV Hotel
+            </div>
+            <div class="login">
+                <div class="login_title">
+                    <div onclick="myLogin()">
                         Đăng nhập
-                        <div class="Line2" id="LineLogin"></div>
-                       </div>
-                       <div class="Line"></div>
-                       <div class="Title_item" id="TTSigup" onclick="MySigup()">
-                        Đăng ký
-                        <div class="Line2" id="LineSigup"></div>
-                       </div>
+                        <div class="line" id="LineLogin"></div>
                     </div>
-                    <div id="Login">
-                        <div class="Email">
+                    <div onclick="mySignUp()">
+                        Đăng ký
+                        <div class="line" id="LineSignUp"></div>
+                    </div>
+                </div>
+                <div class="login_content" id="Login">
+                    <div class="content">
+                        <div class="title">
                             Email
                         </div>
-                        <input type="text" id="txtEmail">
-                        <div class="Email">
-                            Password
+                        <input type="text" class="input">
+                        <div class="title">
+                            Mật khẩu
                         </div>
-                        <input type="text" id="txtPassword">
-                        <div class="Note" id="Note">
-                            Sai tài khoản hoặc mật khẩu!
-                        </div>
-                        <div class="Tick">
+                        <input type="text" class="input">
+                    </div>
+                    <div class="loi">
+                        Sai tài khoản hoặc mật khẩu!
+                    </div>
+                    <div class="button">
+                        <button>Đăng nhập</button>
+                        <div>
                             <input type="checkbox">
                             Ghi nhớ mật khẩu
                         </div>
-                        <div style="width: 100%;display: flex;justify-content: center;margin-top: 10px;">
-                            <button onclick="MyFunction()">
-                                ĐĂNG NHẬP
-                            </button>
-                        </div>
                     </div>
-                    <div id="Sigup">
-                        <div class="Email">
-                            Họ tên
+                </div>
+                <div class="login_content" id="SignUp">
+                    <div class="content">
+                        <div class="title">
+                            Họ và tên
                         </div>
-                        <input type="text">
-                        <div class="Email">
+                        <input type="text" class="input">
+                        <div class="title">
                             CCCD
                         </div>
-                        <input type="text">
-                        <div class="Email">
+                        <input type="text" class="input">
+                        <div class="title">
                             Số điện thoại
                         </div>
-                        <input type="text">
-                        <div class="Email">
+                        <input type="text" class="input">
+                        <div class="title">
                             Email
                         </div>
-                        <input type="text">
-                        <div class="Email">
+                        <input type="text" class="input">
+                        <div class="title">
                             Mật khẩu
                         </div>
-                        <input type="text">
-                        <div class="Email">
+                        <input type="text" class="input">
+                        <div class="title">
                             Nhập lại mật khẩu
                         </div>
-                        <input type="text">
-                        <div style="width: 100%;display: flex;justify-content: center;margin-top: 10px;">
-                            <button>
-                                ĐĂNG KÝ
-                            </button>
-                        </div>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="loi">
+                        Thiếu thông tin!!
+                    </div>
+                    <div class="button">
+                        <button>Đăng ký</button>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <script src="./Login.js"></script>

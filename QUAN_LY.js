@@ -78,3 +78,7 @@ function MyForm(ID){
 function CloseForm(ID){
     document.getElementById(ID).style.display="none";
 }
+
+function TrangChu(){
+    window.location.href="./Page.html";
+}
