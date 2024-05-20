@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="detail">
+    <div class="detail" id="detail">
         <div class="detail_container">
             <div class="slide-wrap">
                 <div class="slider">
@@ -41,7 +41,9 @@
             <div class="detail_infor">
                 <div class="Room_title">
                     Phòng tổng thống
-                    <div class="line"></div>
+                    <div onclick="MyCloseDetail()">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
                 </div>
                 <ul>
                     <li>Chào mừng quý khách đến với phòng Tổng thống - biểu tượng của sự sang trọng và đẳng cấp. 
@@ -56,7 +58,7 @@
         <div class="Form_container">
             <div class="Form_logo">
                 <img src="./Logo.png" alt="" width="50px">
-                HVM Hotel
+                HMV Hotel
             </div>
             <div class="Form_title">
                 ĐẶT PHÒNG
@@ -90,11 +92,15 @@
         <div class="Taskbar_container">
             <div class="logo">
                 <img src="./Logo.png" alt="" width="100px">
-                HVM Hotel
+                HMV Hotel
             </div>
-            <div class="User">
-                <i class="fa-solid fa-user-tie"></i>
-                USER
+            <div style="display: flex;gap: 15px;">
+                <div class="User">
+                    Đăng nhập
+                </div>
+                <div class="User">
+                    Đăng ký
+                </div>
             </div>
         </div>
     </div>
