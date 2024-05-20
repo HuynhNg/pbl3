@@ -1,10 +1,17 @@
 function MyForm(){
-    document.getElementById("Form").style.display = "flex";  
+    document.getElementById("Form").style.display= "flex";
 }
-function CloseForm(){
-    document.getElementById("Form").style.display = "none"; 
+function Mydetail() {
+    const detail = document.querySelector('.detail');
+    detail.style.display = "flex";
 }
-function MyLogin()
-{
-    window.location.href="./Login.html";
+document.addEventListener('click', function(event) {
+    const detailContainer = document.getElementById('detail_container');
+    const detail = document.getElementById('detail');
+    if (!detailContainer.contains(event.target) && !event.target.closest('button')) {
+        detail.classList.add('hidden');
+    }
+});
+function Close(){
+    document.getElementById("Form").style.display= "none";
 }
