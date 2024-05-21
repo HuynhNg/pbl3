@@ -12,3 +12,6 @@ function Close(){
 function MyCloseDetail(){
     document.getElementById("detail").style.display= "none";
 }
+function MyLogin(){
+    window.location.href="./Login.html";
+}
