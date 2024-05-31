@@ -5,7 +5,7 @@
     font-family: "Inter", sans-serif;
 }
 html{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .Taskbar{
     width: 100vw;
@@ -37,11 +37,23 @@ html{
     font-size: 24px;
     border: 3px solid;
 }
+.Taskbar_item{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(116, 114, 114);
+    width: 120px;
+}
+#Taskbar_item_1{
+    color: black;
+}
 .container{
     width: 100%;
     max-width: 1440px;
     position: relative;
     top: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .banner{
     display: flex;
@@ -134,7 +146,6 @@ html{
 }
 .detail_container{
     width: 800px;
-    height: 300px;
     background-color: white;
     border-radius: 16px;
     box-shadow: 6px 4px 6px 4px rgba(0, 0, 0, 0.1);
@@ -162,6 +173,91 @@ html{
     gap: 10px;
     width: 400px;
 }
+#Page{
+    display: flex;
+}
+#HistoryContainer{
+    display: none;
+    padding-top: 50px;
+}
+#PersonalInfor{
+    display:none;
+}
+
+
+/* css history */
+.History{
+    width: 700px;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .08);
+    border-radius: 16px;
+}
+.History_infor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #5b5b5b;
+}
+.History_infor_content{
+    display: flex;
+    justify-content: space-between;
+}
+.History_condition_1{
+    color: green;
+}
+.History_condition_2{
+    color: red;
+}
+
+/* css PersonalInfor */
+.Personal_infor{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .08);
+}
+.Personal_infor_Title{
+    width: 100%;
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Personal_infor div{
+    display: flex;
+    justify-content: space-between;
+}
+.Personal_infor div p::before{
+    content: "• ";
+}
+.Personal_infor input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-weight: 400;
+    font-size: 20px;
+}
+.Personal_infor input[type="radio"]{
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
 
 .Form{
     width: 100vw; /* Độ rộng của form */
@@ -182,7 +278,7 @@ html{
     /* background-color: #EBAB56; */
     z-index: 101;
     box-shadow: 6px 4px 6px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 20px 30px;
     font-weight: 300;
     font-size: 16px;
     background-color: white;
@@ -207,7 +303,7 @@ html{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .Form_item{
     width: 100%;
@@ -217,7 +313,7 @@ html{
 }
 .Form_note{
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .input1{
     width: 400px;
@@ -258,6 +354,16 @@ button{
 button:hover{
     background-color: white;
     color: orangered;
+}
+button:disabled {
+    opacity: 0.6;
+}
+
+/* Vô hiệu hóa hiệu ứng hover khi nút bị vô hiệu hóa */
+button:disabled:hover {
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: white;
 }
 .hidden{
     display: none;
@@ -318,4 +424,48 @@ a{
     width: 100px;
     height: 60px;
     overflow: hidden;
+}
+.li{
+    list-style-type: none;
+    margin-left: 20px;
+    width: 500px;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    list-style-type: circle;
+}
+.li::before{
+    content: "• ";
+}
+.checkbox-list{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    color: rgb(138, 136, 136);
+    font-weight: 400;
+    margin-bottom: 10px;
+    overflow-x:scroll;
+    padding-right:10px ;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.checkbox-list::-webkit-scrollbar {
+    height: 5px;
+    width: 100%;
+}
+.checkbox-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+/* Nút cuộn */
+.checkbox-list::-webkit-scrollbar-thumb {
+    background: #888; /* Màu của nút cuộn */
+    border-radius: 5px; /* Độ cong của nút cuộn */
+}
+.checkbox-list label{
+    display: flex;
+    gap: 5px;
+    width: max-content;
+    align-items: center;
+    white-space: nowrap;
 }
