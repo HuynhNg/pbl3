@@ -180,7 +180,11 @@
     width: 200px;
 }
 input{
-    margin-right: 10px;
+    margin-right: 5x;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid black;
+    color:rgb(92, 92, 92) ;
 }
 .button1{
     padding: 10px 20px 10px 20px;

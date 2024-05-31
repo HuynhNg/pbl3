@@ -4,9 +4,6 @@
     margin: 0px;
     font-family: "Inter", sans-serif;
 }
-html{
-    /* overflow-x: hidden; */
-}
 .Taskbar{
     width: 100vw;
     position: fixed;
