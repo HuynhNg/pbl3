@@ -28,6 +28,21 @@
                 <p>SĐT:</p>
                 <input type="text" class="input">
             </div>
+            <!-- <div class="Form_item" class="input">
+                <p>Giới tính:</p>
+                <div style="display: flex;">
+                    <div>
+                        <input type="radio" name="Gender">Nam
+                    </div>
+                    <div>
+                        <input type="radio" name="Gender">Nữ
+                    </div>
+                </div>
+            </div> -->
+            <div class="Form_item" class="input">
+                <p>Địa chỉ:</p>
+                <input type="text" class="input">
+            </div>
             <div class="Form_item" class="input">
             <p>Loại phòng:</p>
                 <input list="roomTypes" id="roomType" name="roomType" class="input">
@@ -38,8 +53,29 @@
                 </datalist>
             </div>
             <div class="Form_item" class="input">
-                <p>Số lượng:</p>
+                <p>Số người(<= 2)</p>
                 <input type="text" class="input">
+            </div>
+            <p>Dịch vụ:</p>
+            <div class="checkbox-list">
+                <label>
+                    <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet sáng
+                </label>
+                <label>
+                    <input type="checkbox" name="DV" value="Buffet trưa" onchange="updateSelection()"> Buffet trưa
+                </label>
+                <label>
+                    <input type="checkbox" name="DV" value="Tiệc đêm" onchange="updateSelection()"> Tiệc đêm
+                </label>
+                <label>
+                    <input type="checkbox" name="DV" value="Massage" onchange="updateSelection()"> Massage
+                </label>
+                <label>
+                    <input type="checkbox" name="DV" value="Đưa đón" onchange="updateSelection()"> Đưa đón
+                </label>
+                <label>
+                    <input type="checkbox" name="DV" value="Bể bơi" onchange="updateSelection()"> Bể bơi
+                </label>
             </div>
             <div class="Form_item">
                 <p>Ngày nhận phòng:</p>

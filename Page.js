@@ -5,6 +5,33 @@ function Mydetail(id) {
     const Room = document.getElementById(`${id}_infor`);
     const Room_infor = Room.getElementsByTagName("li");
     const roomDetailElement = document.getElementById("Room_detail");
+    const Img= document.getElementById("slider");
+    
+    //add slider
+    Img.innerHTML = `
+        <div class="slider">
+            <div class="slide" id="slide-1">
+                <img src="./${id}1.jpg" alt="" >
+            </div>
+            <div class="slide" id="slide-2">
+                <img src="./${id}2.jpg" alt="" >
+            </div>
+            <div class="slide" id="slide-3">
+                <img src="./${id}3.jpg" alt="" >
+            </div>
+        </div>
+        <div class="link_img">
+            <a href="#slide-1">
+                <img src="./${id}1.jpg" alt="" width="100%">
+            </a>
+            <a href="#slide-2">
+                <img src="./${id}2.jpg" alt="" width="100%">
+            </a>
+            <a href="#slide-3">
+                <img src="./${id}3.jpg" alt="" width="100%">
+            </a>
+        </div>
+    `;
 
     // Display the detail element
     document.getElementById("detail").style.display = "flex";

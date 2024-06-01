@@ -14,42 +14,15 @@
 <body>
     <div class="detail" id="detail">
         <div class="detail_container">
-            <div class="slide-wrap">
-                <div class="slider">
-                  <div class="slide" id="slide-1">
-                    <img src="./Room2_1.png" alt="" width="100%">
-                  </div>
-                  <div class="slide" id="slide-2">
-                    <img src="./Room2_1.png" alt="" width="100%">
-                    </div>
-                  <div class="slide" id="slide-3">
-                    <img src="./Room1_1.png" alt="" width="100%">
-                  </div>
-                </div>
-                <div class="link_img">
-                    <a href="#slide-1">
-                        <img src="./Room2_1.png" alt="" width="100%">
-                    </a>
-                    <a href="#slide-2">
-                        <img src="./Room2_1.png" alt="" width="100%">
-                    </a>
-                    <a href="#slide-3">
-                        <img src="./Room1_1.png" alt="" width="100%">
-                    </a>
-                </div>
+            <div class="slide-wrap" id="slider">
+                <!-- img -->
             </div>
             <div class="detail_infor">
-                <div class="Room_title">
-                    Phòng tổng thống
-                    <div onclick="MyCloseDetail()">
-                        <i class="fa-solid fa-circle-xmark"></i>
-                    </div>
+                <div class="Room_title" id="Room">
+                    <!-- Loại phòng -->
                 </div>
-                <ul>
-                    <li>Chào mừng quý khách đến với phòng Tổng thống - biểu tượng của sự sang trọng và đẳng cấp. 
-                        Nằm ở vị trí đặc biệt trong khách sạn của chúng tôi, phòng Tổng thống không chỉ là nơi lưu trú mà còn là trải nghiệm đỉnh cao dành cho những ai tìm kiếm sự hoàn hảo và tinh tế.</li>
-                    <li>Tiện ích: Xe đưa đón tận nơi, hồ bơi, phòng Gym,...</li>
-                    <li>Giá phòng: 5.000.000 đồng/ đêm</li>
+                <ul id="Room_detail">
+                    <!-- Giới thiệu phòng -->
                 </ul>
             </div>
         </div>
@@ -74,7 +47,7 @@
                     <option value="Vip1">
                     <option value="Vip2">
                 </datalist>
-            <input type="text" placeholder="Số lượng phòng:" class="input50">
+            <input type="text" placeholder="Số người(<= 2)" class="input50">
             <p style="font-size: 20px;font-weight: 400;color: rgb(138, 136, 136);;">Dịch vụ:</p>
             <div class="checkbox-list">
                 <label>
@@ -101,7 +74,12 @@
             <input type="date" placeholder="Ngày trả phòng" class="input50">
             <div class="Form_note">
                 <span style="color: red;font-weight: 600;margin-bottom: 30px;text-decoration: underline;">Lưu ý:</span> 
-                Quý khách vui lòng trả phòng trước 10 giờ sáng
+                <ul>
+                    <li>Quý khách vui lòng trả phòng trước 10 giờ sáng</li>
+                    <li>Mỗi lần đặt dịch vụ là đặt cho tất cả các thành viên trong phòng</li>
+                    <li>Nếu quý khách đặt nhiều phòng có nhu cầu đưa đón bao nhiêu xe thì đánh bằng từng đó lần trên form đặt phòng</li>
+                </ul>
+                
             </div>
             <div style="width: 100%;display: flex;gap: 20px;justify-content: center;">
                 <button>Đặt phòng</button>
@@ -148,7 +126,7 @@
         </div>
         <div class="Room">
             <div class="Room_item">
-                <img src="./Room3_1.png" alt="" style="border-radius: 8px;" width="260px">
+                <img src="./Room11.jpg" alt="" style="border-radius: 8px;" width="260px">
                 <div class="Room_infor" >
                     <div class="Room_title" id="Room1">
                         Phòng tổng thống
@@ -167,7 +145,7 @@
                 </div>
             </div>
             <div class="Room_item">
-                <img src="./Room2_1.png" alt="" style="border-radius: 8px;" width="260px">
+                <img src="./Room21.jpg" alt="" style="border-radius: 8px;" width="260px">
                 <div class="Room_infor">
                     <div class="Room_title" id="Room2">
                         Phòng hạng sang
@@ -187,7 +165,7 @@
                 </div>
             </div>
             <div class="Room_item">
-                <img src="./Room1_1.png" alt="" style="border-radius: 8px;" width="260px">
+                <img src="./Room31.jpg" alt="" style="border-radius: 8px;" width="260px">
                 <div class="Room_infor">
                     <div class="Room_title" id="Room3">
                         Phòng thường
@@ -226,7 +204,7 @@
     <div class="container" id="HistoryContainer">
         <div class="History">
             <div class="Room_item">
-                <img src="./Room3_1.png" alt="" style="border-radius: 8px;" width="260px">
+                <img src="./Room13.jpg" alt="" style="border-radius: 8px;" width="260px">
                 <div class="Room_infor" >
                     <div class="Room_title" id="Room1">
                         Phòng tổng thống

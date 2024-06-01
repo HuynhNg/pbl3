@@ -271,6 +271,7 @@
 .Form_container{
     display: block;
     width: 500px;
+    max-height: 600px;
     /* height: 600px; */
     /* background-color: #EBAB56; */
     z-index: 101;
@@ -284,6 +285,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    overflow-y: scroll;
+}
+.Form_container::-webkit-scrollbar {
+    height: 100%;
+    width: 5px;
+}
+.Form_container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+/* Nút cuộn */
+.Form_container::-webkit-scrollbar-thumb {
+    background: #888; /* Màu của nút cuộn */
+    border-radius: 5px; /* Độ cong của nút cuộn */
 }
 .Form_logo{
     display: flex;
@@ -382,6 +397,8 @@ li{
 .link_img{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0px 20px;
 }
@@ -416,6 +433,13 @@ li{
 }
 .slides > div:target {
     transform: scale(0.8);
+}
+.slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    object-position: center;
 }
 a{
     width: 100px;
