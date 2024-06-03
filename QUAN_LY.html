@@ -11,6 +11,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    <div class="Form" id="AddRoom">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">THÊM PHÒNG</p>
+            </div>
+            <div class="Form_item">
+                <p>Tên phòng:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>Loại phòng:</p>
+                    <input list="roomTypes" id="roomType" name="roomType" class="input">
+                    <datalist id="roomTypes">
+                        <option value="Tổng thống">
+                        <option value="Hạng sang">
+                        <option value="Thường">
+                    </datalist>
+                </div>
+            <div class="Form_item" style="justify-content: center;margin-top: 20px;">
+                <button class="button1">THÊM PHÒNG</button>
+                <button class="button1" onclick="CloseForm('AddRoom')">Thoát</button>
+            </div>
+        </div>
+    </div>
     <div class="Form" id="RoomForm">
         <div class="Form_container" >
             <div class="Form_item" style="justify-content: center;">
@@ -47,9 +71,9 @@
             <p>Loại phòng:</p>
                 <input list="roomTypes" id="roomType" name="roomType" class="input">
                 <datalist id="roomTypes">
+                    <option value="Tổng thống">
+                    <option value="Hạng sang">
                     <option value="Thường">
-                    <option value="Vip1">
-                    <option value="Vip2">
                 </datalist>
             </div>
             <div class="Form_item" class="input">
@@ -243,6 +267,7 @@
                     <div style="width:100%;display: flex;justify-content: center;gap: 20px;">
                         <button class="button1">Kiểm tra</button>
                         <button class="button1" onclick="MyForm('RoomForm')">Đặt phòng</button>
+                        <button class="button1" onclick="MyForm('AddRoom')">Thêm phòng</button>
                     </div>
                 </div>
                 <div class="manager_item2">
