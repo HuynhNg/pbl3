@@ -245,7 +245,9 @@ td:nth-child(5) {
     justify-content: center; /* Căn chỉnh nội dung theo chiều ngang */
     align-items: center; /* Căn chỉnh nội dung theo chiều dọc */
 }
-
+/* #Update{
+    display: flex;
+} */
 .Form_container{
     background-color: white;
     color: rgb(0, 0, 0);
