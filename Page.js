@@ -1,5 +1,5 @@
-function MyForm(){
-    document.getElementById("Form").style.display= "flex";
+function MyForm(id){
+    document.getElementById(id).style.display= "flex";
 }
 function Mydetail(id) {
     const Room = document.getElementById(`${id}_infor`);
@@ -52,8 +52,8 @@ function Mydetail(id) {
     });
 }
 
-function Close(){
-    document.getElementById("Form").style.display= "none";
+function Close(id){
+    document.getElementById(id).style.display= "none";
 }
 function MyCloseDetail(){
     document.getElementById("detail").style.display= "none";

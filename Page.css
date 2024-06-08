@@ -285,7 +285,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .Form_container::-webkit-scrollbar {
     height: 100%;
@@ -459,20 +459,23 @@ a{
     content: "• ";
 }
 .checkbox-list{
+    width: 100%;
+    height: 18vh;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 10px;
     font-size: 20px;
     color: rgb(138, 136, 136);
     font-weight: 400;
     margin-bottom: 10px;
-    overflow-x:scroll;
+    overflow-y:scroll;
     padding-right:10px ;
     padding-bottom: 5px;
     margin-top: 5px;
 }
 .checkbox-list::-webkit-scrollbar {
-    height: 5px;
-    width: 100%;
+    height: 100%;
+    width: 3px;
 }
 .checkbox-list::-webkit-scrollbar-track {
     background: #f1f1f1; /* Màu nền của thanh cuộn */
@@ -485,8 +488,28 @@ a{
 }
 .checkbox-list label{
     display: flex;
+    flex-direction: column;
     gap: 5px;
-    width: max-content;
-    align-items: center;
+    width:100%;
     white-space: nowrap;
+    justify-content: space-between;
+}
+.checkbox-list label input[type="text"]{
+    width: 50px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.checkbox-list label input[type="datetime-local"]{
+    width:250px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.checkbox-list label input[type="date"]{
+    width:250px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 16px;
 }

@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="Form" id="Form">
+    <div class="Form" id="FormDP">
         <div class="Form_container">
             <div class="Form_logo">
                 <img src="./Logo.png" alt="" width="50px">
@@ -48,27 +48,6 @@
                     <option value="Vip2">
                 </datalist>
             <input type="text" placeholder="Số người(<= 2)" class="input50">
-            <p style="font-size: 20px;font-weight: 400;color: rgb(138, 136, 136);;">Dịch vụ:</p>
-            <div class="checkbox-list">
-                <label>
-                    <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet sáng
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Buffet trưa" onchange="updateSelection()"> Buffet trưa
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Tiệc đêm" onchange="updateSelection()"> Tiệc đêm
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Massage" onchange="updateSelection()"> Massage
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Đưa đón" onchange="updateSelection()"> Đưa đón
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Bể bơi" onchange="updateSelection()"> Bể bơi
-                </label>
-            </div>
             <input type="date" placeholder="Ngày nhận phòng" class="input50">
             <i class="fa-solid fa-arrow-right"></i>
             <input type="date" placeholder="Ngày trả phòng" class="input50">
@@ -76,14 +55,95 @@
                 <span style="color: red;font-weight: 600;margin-bottom: 30px;text-decoration: underline;">Lưu ý:</span> 
                 <ul>
                     <li>Quý khách vui lòng trả phòng trước 10 giờ sáng</li>
-                    <li>Mỗi lần đặt dịch vụ là đặt cho tất cả các thành viên trong phòng</li>
-                    <li>Nếu quý khách đặt nhiều phòng có nhu cầu đưa đón bao nhiêu xe thì đánh bằng từng đó lần trên form đặt phòng</li>
                 </ul>
                 
             </div>
             <div style="width: 100%;display: flex;gap: 20px;justify-content: center;">
                 <button>Đặt phòng</button>
-                <button onclick="Close()">Thoát</button>
+                <button onclick="Close('FormDP')">Thoát</button>
+            </div>
+        </div>
+    </div>
+    <div class="Form" id="FormDV">
+        <div class="Form_container">
+            <div class="Form_logo">
+                <img src="./Logo.png" alt="" width="50px">
+                HMV Hotel
+            </div>
+            <div class="Form_title">
+                ĐẶT DỊCH VỤ
+            </div>
+            <input type="text" placeholder="Họ và tên:" class="input50">
+            <input type="text" placeholder="CCCD:" class="input50">
+            <input type="text" placeholder="Email:" class="input50">
+            <input type="text" placeholder="Số điện thoại:" class="input50">
+            <input type="text" placeholder="Địa chỉ" class="input100">
+            <div class="checkbox-list">
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet sáng(200.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet trưa(300.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Tiệc đêm(700.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Massage(200.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="datetime-local">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Đưa đón(200.000đ/xe 7 chỗ)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="datetime-local">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Bể bơi(50.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Số người:">
+                        <input type="date">
+                    </div>
+                </label>
+            </div>
+            <div class="Form_note">
+                <span style="color: red;font-weight: 600;margin-bottom: 30px;text-decoration: underline;">Lưu ý:</span> 
+                <ul>
+                    <li>Quý khách vui lòng dến đúng giờ trong vòng 1 tiếng kể từ thời gian đặt!</li>
+                </ul>
+                
+            </div>
+            <div style="width: 100%;display: flex;gap: 20px;justify-content: center;">
+                <button>Đặt phòng</button>
+                <button onclick="Close('FormDV')">Thoát</button>
             </div>
         </div>
     </div>
@@ -121,7 +181,8 @@
             <div class="Selecter_container">
                 <input type="text" placeholder="Thông tin phòng, tiện ích,.." class="input1">
                 <button>Tìm kiếm</button>
-                <button onclick="MyForm()">Đặt phòng</button>
+                <button onclick="MyForm('FormDP')">Đặt phòng</button>
+                <button onclick="MyForm('FormDV')">Đặt dịch vụ</button>
             </div>
         </div>
         <div class="Room">
