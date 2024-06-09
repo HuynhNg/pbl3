@@ -43,11 +43,11 @@
             <input type="text" placeholder="Địa chỉ" class="input100">
             <input list="roomTypes" id="roomType" name="roomType" class="input50" placeholder="Loại phòng">
                 <datalist id="roomTypes">
+                    <option value="Tổng thống">
+                    <option value="Hạng sang">
                     <option value="Thường">
-                    <option value="Vip1">
-                    <option value="Vip2">
                 </datalist>
-            <input type="text" placeholder="Số người(<= 2)" class="input50">
+            <input type="text" placeholder="Số lượng" class="input50">
             <input type="date" placeholder="Ngày nhận phòng" class="input50">
             <i class="fa-solid fa-arrow-right"></i>
             <input type="date" placeholder="Ngày trả phòng" class="input50">
@@ -195,7 +195,7 @@
                         Chi tiết
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                    <button onclick="MyForm()">Đặt phòng</button>
+                    <button onclick="MyForm('FormDP')">Đặt phòng</button>
                 </div>
             </div>
             <div class="Room_item">
@@ -215,7 +215,7 @@
                         Chi tiết
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                    <button onclick="MyForm()">Đặt phòng</button>
+                    <button onclick="MyForm('FormDP')">Đặt phòng</button>
                 </div>
             </div>
             <div class="Room_item">
@@ -233,7 +233,7 @@
                         Chi tiết
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                    <button onclick="MyForm()">Đặt phòng</button>
+                    <button onclick="MyForm('FormDP')">Đặt phòng</button>
                 </div>
             </div>
         </div>

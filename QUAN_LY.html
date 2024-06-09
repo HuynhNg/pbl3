@@ -52,17 +52,6 @@
                 <p>SĐT:</p>
                 <input type="text" class="input">
             </div>
-            <!-- <div class="Form_item" class="input">
-                <p>Giới tính:</p>
-                <div style="display: flex;">
-                    <div>
-                        <input type="radio" name="Gender">Nam
-                    </div>
-                    <div>
-                        <input type="radio" name="Gender">Nữ
-                    </div>
-                </div>
-            </div> -->
             <div class="Form_item" class="input">
                 <p>Địa chỉ:</p>
                 <input type="text" class="input">
@@ -77,30 +66,10 @@
                 </datalist>
             </div>
             <div class="Form_item" class="input">
-                <p>Số người(<= 2)</p>
+                <p>Số lượng:</p>
                 <input type="text" class="input">
             </div>
-            <p>Dịch vụ:</p>
-            <div class="checkbox-list">
-                <label>
-                    <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet sáng
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Buffet trưa" onchange="updateSelection()"> Buffet trưa
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Tiệc đêm" onchange="updateSelection()"> Tiệc đêm
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Massage" onchange="updateSelection()"> Massage
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Đưa đón" onchange="updateSelection()"> Đưa đón
-                </label>
-                <label>
-                    <input type="checkbox" name="DV" value="Bể bơi" onchange="updateSelection()"> Bể bơi
-                </label>
-            </div>
+            
             <div class="Form_item">
                 <p>Ngày nhận phòng:</p>
                 <input type="date" class="input">
@@ -115,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="Form" id="ActorForm">
+    <div class="Form" id="AddActor">
         <div class="Form_container" >
             <div class="Form_item" style="justify-content: center;">
                 <p style="font-weight: 600;font-size: 24px;color: black;">THÊM KHÁCH HÀNG</p>
@@ -137,13 +106,6 @@
                 <input type="text" class="input">
             </div>
             <div class="Form_item">
-                <p>Giới tính:</p>
-                <div style="display: flex;gap: 20px;">
-                    <div><input type="radio" class="input" name="Gender" checked> Nam</div>
-                    <div><input type="radio" class="input" name="Gender"> Nữ</div>
-                </div>
-            </div>
-            <div class="Form_item">
                 <p>Địa chỉ:</p>
                 <input type="text" class="input">
             </div>
@@ -153,11 +115,11 @@
             </div>
             <div class="Form_item" style="justify-content: center;margin-top: 20px;">
                 <button class="button1">THÊM</button>
-                <button class="button1" onclick="CloseForm('ActorForm')">Thoát</button>
+                <button class="button1" onclick="CloseForm('AddActor')">Thoát</button>
             </div>
         </div>
     </div>
-    <div class="Form" id="ServiceForm">
+    <div class="Form" id="AddService">
         <div class="Form_container" >
             <div class="Form_item" style="justify-content: center;">
                 <p style="font-weight: 600;font-size: 24px;color: black;">THÊM DỊCH VỤ</p>
@@ -172,6 +134,93 @@
             </div>
             <div class="Form_item" style="justify-content: center;margin-top: 20px;">
                 <button class="button1">THÊM</button>
+                <button class="button1" onclick="CloseForm('AddService')">Thoát</button>
+            </div>
+        </div>
+    </div>
+    <div class="Form" id="ServiceForm">
+        <div class="Form_container" >
+            <div class="Form_item" style="justify-content: center;">
+                <p style="font-weight: 600;font-size: 24px;color: black;">ĐẶT DỊCH VỤ</p>
+            </div>
+            <div class="Form_item">
+                <p>Họ và tên:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Email:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>CCCD:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>SĐT:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item" class="input">
+                <p>Địa chỉ:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="checkbox-list">
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet sáng(200.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Buffet trưa(300.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Tiệc đêm(700.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Massage(200.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="datetime-local">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Đưa đón(200.000đ/xe 7 chỗ)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="checkbox" name="DV" value="Buffet sáng" onchange="updateSelection()"> Bể bơi(50.000đ/người)
+                    </div>
+                    <div>
+                        <input type="text" placeholder="SL:">
+                        <input type="date">
+                    </div>
+                </label>
+            </div>
+            <div class="Form_item" style="justify-content: center;margin-top: 20px;">
+                <button class="button1">ĐẶT DịCH VỤ</button>
                 <button class="button1" onclick="CloseForm('ServiceForm')">Thoát</button>
             </div>
         </div>
@@ -313,7 +362,7 @@
                         Số điện thoại: 
                         <input type="text" placeholder="Số điện thoại cần tìm">
                         <button>Tìm kiếm</button>
-                        <button class="button2" onclick="MyForm('ActorForm')">Thêm khách hàng</button>
+                        <button class="button2" onclick="MyForm('AddActor')">Thêm khách hàng</button>
                     </div>
                 </div>
                 <div class="manager_item2">
@@ -471,7 +520,8 @@
                         Dịch vụ:
                         <input type="text" placeholder="Thông tin dịch vụ">
                         <button>Tìm kiếm</button>
-                        <button class="button2" onclick="MyForm('ServiceForm')">Thêm dịch vụ</button>
+                        <button class="button2" onclick="MyForm('AddService')">Thêm dịch vụ</button>
+                        <button class="button2" onclick="MyForm('ServiceForm')">Đặt dịch vụ</button>
                     </div>
                 </div>
                 <div class="manager_item2">
