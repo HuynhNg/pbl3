@@ -45,6 +45,10 @@
                 <input type="text" class="input">
             </div>
             <div class="Form_item">
+                <p>CCCD:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
                 <p>Email:</p>
                 <input type="text" class="input">
             </div>
@@ -109,10 +113,6 @@
                 <p>Địa chỉ:</p>
                 <input type="text" class="input">
             </div>
-            <div class="Form_item" class="input">
-                <p>Mật khẩu</p>
-                <input type="text" class="input">
-            </div>
             <div class="Form_item" style="justify-content: center;margin-top: 20px;">
                 <button class="button1">THÊM</button>
                 <button class="button1" onclick="CloseForm('AddActor')">Thoát</button>
@@ -129,7 +129,11 @@
                 <input type="text" class="input">
             </div>
             <div class="Form_item">
-                <p>Loại dịch vụ:</p>
+                <p>Giá dịch vụ:</p>
+                <input type="text" class="input">
+            </div>
+            <div class="Form_item">
+                <p>Số lượng lớn nhất:</p>
                 <input type="text" class="input">
             </div>
             <div class="Form_item" style="justify-content: center;margin-top: 20px;">
@@ -359,8 +363,8 @@
                         <div class="line"></div>
                     </div>
                     <div class="filter">
-                        Số điện thoại: 
-                        <input type="text" placeholder="Số điện thoại cần tìm">
+                        Tên khách hàng:
+                        <input type="text" placeholder="Tên khách hàng cần tìm..">
                         <button>Tìm kiếm</button>
                         <button class="button2" onclick="MyForm('AddActor')">Thêm khách hàng</button>
                     </div>
@@ -368,140 +372,93 @@
                 <div class="manager_item2">
                     <table>
                         <tr>
-                            <th>Mã KH</th>
-                            <th>Tên KH</th>
-                            <th>Số điện thoại</th>
+                            <th>IDKH</th>
+                            <th>Họ và tên</th>
+                            <th>CCCD</th>
+                            <th>SĐT</th>
                             <th>Email</th>
-                            <th>Mật khẩu(nếu có) </th>
+                            <th>Địa chỉ</th>
                             <th></th>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>Nguyễn Văn Hùng</td>
+                            <td>KH01</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>HungNV@gmail.com</td>
-                            <td>Hung03051991</td>
+                            <td>AnNV@gmail.com</td>
+                            <td>Hà Nội</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Lê Giang</td>
+                            <td>KH02</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>GiangLe@gmail.com</td>
-                            <td>Giang14051976</td>
+                            <td>HoaNguyen@gmail.com</td>
+                            <td>Hà Nội</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>Lê Huy</td>
+                            <td>KH03</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>Huy05121980@gmail.com</td>
-                            <td>Huy05121980</td>
+                            <td>HaLeThi@gmail.com</td>
+                            <td>Hà Nội</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>Nguyễn Văn Hùng</td>
+                            <td>KH04</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>HungNV@gmail.com</td>
-                            <td>Hung03051991</td>
+                            <td>TrungNg@gmail.com</td>
+                            <td>Huế</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td>Lê Giang</td>
+                            <td>KH05</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>GiangLe@gmail.com</td>
-                            <td>Giang14051976</td>
+                            <td>DungHuynh@gmail.com</td>
+                            <td>Hà Nội</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>Lê Huy</td>
+                            <td>KH06</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>Huy05121980@gmail.com</td>
-                            <td>Huy05121980</td>
+                            <td>AnNV@gmail.com</td>
+                            <td>Hà Nội</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
                             </td>
                         </tr>
                         <tr>
-                            <td>7</td>
-                            <td>Lê Giang</td>
+                            <td>KH07</td>
+                            <td>Nguyễn Văn An</td>
+                            <td>012364845212</td>
                             <td>0987589213</td>
-                            <td>GiangLe@gmail.com</td>
-                            <td>Giang14051976</td>
-                            <td>
-                                <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Lê Huy</td>
-                            <td>0987589213</td>
-                            <td>Huy05121980@gmail.com</td>
-                            <td>Huy05121980</td>
-                            <td>
-                                <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Lê Giang</td>
-                            <td>0987589213</td>
-                            <td>GiangLe@gmail.com</td>
-                            <td>Giang14051976</td>
-                            <td>
-                                <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Lê Huy</td>
-                            <td>0987589213</td>
-                            <td>Huy05121980@gmail.com</td>
-                            <td>Huy05121980</td>
-                            <td>
-                                <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Lê Giang</td>
-                            <td>0987589213</td>
-                            <td>GiangLe@gmail.com</td>
-                            <td>Giang14051976</td>
-                            <td>
-                                <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Lê Huy</td>
-                            <td>0987589213</td>
-                            <td>Huy05121980@gmail.com</td>
-                            <td>Huy05121980</td>
+                            <td>QuangNg@gmail.com</td>
+                            <td>Đà Nẵng</td>
                             <td>
                                 <i class="fa-regular fa-pen-to-square" onclick="Update(this)"></i>
                                 <i class="fa-regular fa-trash-can"></i>
