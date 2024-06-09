@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Login_background.png);
+    background-image: url(./Img/Login_background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
