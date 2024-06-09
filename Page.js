@@ -11,24 +11,24 @@ function Mydetail(id) {
     Img.innerHTML = `
         <div class="slider">
             <div class="slide" id="slide-1">
-                <img src="./${id}1.jpg" alt="" >
+                <img src="./Img/${id}1.jpg" alt="" >
             </div>
             <div class="slide" id="slide-2">
-                <img src="./${id}2.jpg" alt="" >
+                <img src="./Img/${id}2.jpg" alt="" >
             </div>
             <div class="slide" id="slide-3">
-                <img src="./${id}3.jpg" alt="" >
+                <img src="./Img/${id}3.jpg" alt="" >
             </div>
         </div>
         <div class="link_img">
             <a href="#slide-1">
-                <img src="./${id}1.jpg" alt="" width="100%">
+                <img src="./Img/${id}1.jpg" alt="" width="100%">
             </a>
             <a href="#slide-2">
-                <img src="./${id}2.jpg" alt="" width="100%">
+                <img src="./Img/${id}2.jpg" alt="" width="100%">
             </a>
             <a href="#slide-3">
-                <img src="./${id}3.jpg" alt="" width="100%">
+                <img src="./Img/${id}3.jpg" alt="" width="100%">
             </a>
         </div>
     `;
